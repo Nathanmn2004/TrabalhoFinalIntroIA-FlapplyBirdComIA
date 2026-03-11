@@ -77,3 +77,20 @@ Se quiser melhorar o jogo ou adaptar para estudos, abra uma issue ou envie um pu
 
 Licença MIT — sinta-se à vontade para usar e modificar para fins educativos.
 
+**Configuração NEAT (IA)**
+
+O arquivo `config.txt` contém as configurações do algoritmo NEAT usado para treinar redes neurais que controlam os pássaros no modo IA. Essas configurações definem parâmetros como taxa de mutação, tamanho da população, parâmetros de crossover, limites de compatibilidade de espécies e critérios de estagnação. Durante a execução com IA (`Gabarito FlappyBird.py`), o NEAT roda por gerações — a cada geração a população é avaliada pela função `main`, os genomas recebem fitness e, ao longo das gerações, as redes tendem a melhorar seu desempenho.
+
+Se quiser ajustar o treinamento (por exemplo, número de gerações ou parâmetros evolutivos), edite `config.txt` conforme a sintaxe do NEAT-Python.
+
+**Qual arquivo usar**
+
+- `Gabarito FlappyBird.py`: versão funcional com suporte a IA. Quando a variável `ai_jogando` está definida como `True`, o programa usa o NEAT para treinar e executar agentes controlados por redes neurais. Use este arquivo para treinar e avaliar modelos.
+- `FlappyBird.py`: versão para jogo manual, destinada ao jogador humano. Execute este arquivo se quiser jogar sem ativar o sistema de IA.
+
+**Dicas rápidas**
+
+- Para treinar IA: garanta que `ai_jogando = True` em `Gabarito FlappyBird.py` e execute-o; o processo utilizará `config.txt`.
+- Para jogar manualmente: abra `FlappyBird.py` e execute-o; use `Espaço` para pular.
+
+
